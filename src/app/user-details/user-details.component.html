@@ -1,0 +1,21 @@
+<section class="user-details">
+    <div class="row my-4">
+        <h2 class="fw-bolder">User No.{{user.id}}</h2>
+      </div>
+    <div class="row card py-5">
+        <div class="col-lg-8 col-12  d-md-flex justify-content-center">
+            <div class="avatar me-3 mb-3 mb-md-0">
+                <img src={{user.avatar}} alt="">
+            </div>
+            <div class="info">
+                <p class="f_name"><span>First Name: </span> {{user.first_name}}</p>
+                <p class="l_name"><span>Last Name: </span> {{user.last_name}}</p>
+                <p class="email"><span>E-mail: </span> {{user.email}}</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <app-back-button></app-back-button>
+
+</section>

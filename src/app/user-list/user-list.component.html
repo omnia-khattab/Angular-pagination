@@ -1,0 +1,30 @@
+<section class="user-list">
+  <div class="row my-4">
+    <h2 class="fw-bolder">Users List</h2>
+  </div>
+  <div class="row">
+    <div class="user-wrap col-10 col-md-4 col-lg-3 my-3" *ngFor="let user of userList">
+      <app-user [user]="user"></app-user>
+    </div>
+  </div>
+</section>
+
+<div class="pagination d-flex justify-content-center align-items-center">
+  <div>
+    <button
+      class="btn btn-primary mx-3"
+      (click)="previousPage()"
+      [disabled]="currentPage === 1"
+    >
+      Previous
+    </button>
+    <span> page {{ currentPage }} of {{ total_pages }}</span>
+    <button
+      class="btn btn-primary mx-3"
+      (click)="nextPage()"
+      [disabled]="currentPage === total_pages"
+    >
+      Next
+    </button>
+  </div>
+</div>

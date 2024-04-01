@@ -1,0 +1,14 @@
+<section class="user">
+  <div  class="user-item">
+    <div class="card text-center">
+      <div class="user-avatar my-3">
+        <img src="{{ user.avatar }}" class="" alt="avatar" />
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ user.first_name }} {{ user.last_name }}</h5>
+        <a [routerLink]="['/user', user.id]" class="card-link">More Details</a>
+      </div>
+    </div>
+  </div>
+  
+</section>

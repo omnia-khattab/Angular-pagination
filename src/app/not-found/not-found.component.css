@@ -1,0 +1,6 @@
+.not-found{
+    height: 80vh;
+    background-image: url(../../assets/images/notfound.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

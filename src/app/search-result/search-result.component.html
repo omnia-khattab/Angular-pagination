@@ -1,0 +1,16 @@
+<ng-container *ngIf="foundUser; else notFound">
+    <div class="row my-4">
+        <h2 class="fw-bolder">Search Result</h2>
+      </div>
+    <app-user [user]="foundUser"></app-user>
+    <app-back-button></app-back-button>
+</ng-container>
+
+
+<ng-template #notFound>
+    <div>
+        <p>user not found</p>
+        <app-back-button></app-back-button>
+    </div>
+</ng-template>
+

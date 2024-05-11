@@ -26,7 +26,12 @@ export class NavbarComponent {
     this._userService.getUserByID(searchQuery).subscribe({
       next: (res) => {
         this.foundUser = res.data;
+        //console.log(this.foundUser)
       },
+      error:(err)=>{
+        this.foundUser = {} as User;
+        //console.log(this.foundUser)
+      }
     });
   }
   navigateToSearchResult() {

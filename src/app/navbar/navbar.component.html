@@ -21,7 +21,7 @@
             <input class="form-control me-2" type="search" (keyup)="onSearchInput($event)" placeholder="Search userID" aria-label="Search">
           </div>
           <div class="search-output" [ngClass]="foundUser.id ? 'opacity-1' : 'opacity-0'" *ngIf="foundUser">
-              <a (click)="navigateToSearchResult()">{{foundUser.id}}</a>
+              <a (click)="navigateToSearchResult()">{{foundUser.id}} {{foundUser.first_name}}</a>
             </div>
         </div>
         
